@@ -16,6 +16,6 @@
 /tmp
 .DS_Store
 
-# Ignore files uploadded on localhost
+# Ignore files uploaded on localhost
 /public/system
-/public/images
+# /public/images
