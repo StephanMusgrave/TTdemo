@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'pages/t_and_c'
+
+  get 'pages/privacy'
+
   get 'pages/home'
 
   get 'pages/about'

@@ -13,14 +13,16 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav nav-justified">
-        <li class="active"><a href="#">HOME</a></li>
-        <li><a href="#">TRANSFORMING LEADERSHIP</a></li>
-        <li><a href="#">ASSESSMENTS</a></li>
-        <li><a href="#">COACHING</a></li>
-        <li><a href="#">MEET THE COACHES</a></li>
-        <li><a href="#">RESOURCES AND TOOLS</a></li>
-        <li><a href="#">BOOKINGS AND PRICES</a></li>
+        <li class="active"><a href="/">HOME</a></li>
+        <li><%= link_to "About", pages_about_path %></li>
+
+        <li><%= link_to "TRANSFORMING LEADERSHIP", pages_about_path %></li>
+        <li><%= link_to "ASSESSMENTS", pages_assessments_path %></li>
+        <li><%= link_to "COACHING", pages_coaching_path %></li>
+        <li><%= link_to "MEET THE COACHES", pages_about_path %></li>
+        <li><%= link_to "RESOURCES AND TOOLS", pages_resources_and_tools_path %></li>
+        <li><%= link_to "BOOKINGS AND PRICES", pages_bookings_and_prices_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
-  </nav>
+</nav>
