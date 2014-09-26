@@ -5,9 +5,19 @@
       <a href="/"><img id="logo_img" src="/main-logo.png" /></a>
     </div>
 
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Sign in", pages_about_path %></li>
-        <li><%= link_to "Sign up", pages_contact_path %></li>        
+      <ul class="nav navbar-nav">
+        <li><%= link_to "About", pages_about_path %></li>
+        <li><%= link_to "Contact", pages_contact_path %></li>        
       </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+          <li><%= link_to "Edit profile", edit_user_registration_path %></li>
+          <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
+        <% else %>
+          <li><%= link_to "Sign up", new_user_registration_path %></li>
+          <li><%= link_to "Sign in", new_user_session_path %></li>
+        <% end %>
+      </ul>
+
   </div><!-- /.container-fluid -->
 </nav>

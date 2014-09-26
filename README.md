@@ -1,5 +1,5 @@
 # TTdemo - a prototype
-A project to develop a prototype of a website app for acoaching business.
+A project to develop a prototype of a website app upgrade for an online business coaching business.
 
 ![](public/TTdemo_.png)
 
