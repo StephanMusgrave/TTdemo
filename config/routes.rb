@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'pages/t_and_c'
 
   get 'pages/privacy'
