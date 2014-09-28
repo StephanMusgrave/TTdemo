@@ -6,13 +6,14 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
+<body>
   <%= render 'layouts/header' %>
   <%= render 'layouts/navbar' %>
 
   <div class="container">
 
+ 
     <% flash.each do |name, msg| %>
       <% if msg.is_a?(String) %>
         <div class="alert alert-<%= name == "notice" ? "success" : "danger" %> alert-dismissable">
@@ -21,10 +22,10 @@
         </div>
       <% end %>
     <% end %>
-  </div>
-  
+   
     <%= yield %>
 
+  </div>
   
   <%= render 'layouts/footer' %>
 
