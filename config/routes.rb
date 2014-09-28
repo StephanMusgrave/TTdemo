@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
+  get 'pages/home2'
+
   devise_for :users
   get 'pages/t_and_c'
 
   get 'pages/privacy'
 
   get 'pages/home'
+
+  get 'pages/home2'
 
   get 'pages/about'
 

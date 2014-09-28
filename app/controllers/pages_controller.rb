@@ -16,4 +16,7 @@ class PagesController < ApplicationController
 
   def bookings_and_prices
   end
+  
+  def home2
+  end
 end
