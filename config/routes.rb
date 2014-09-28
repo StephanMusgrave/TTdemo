@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :articles
+
   get 'pages/home2'
 
   devise_for :users
