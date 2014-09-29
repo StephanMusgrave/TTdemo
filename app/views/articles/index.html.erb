@@ -7,9 +7,11 @@
         <td class="thumbnail">
           <%= image_tag article.image.url %>
         </td>
-        <td><%= link_to article.title, article %></td>
-        <td><%= article.caption %></td>
-        <td><%= article.opener %></td>
+        <td >
+          <%= link_to article.caption, article, class: "caption" %><br>
+          <%= article.opener %><br><br>
+          <%= link_to "read more >>", article %>
+        </td>
         <td><%= link_to 'Edit', edit_article_path(article), class: "btn btn-link" %></td>
         <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %></td>
       </tr>
