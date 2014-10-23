@@ -34,7 +34,7 @@ Click here to open the web page on Heroku: [App on Heroku]
 |Figaro                     |handling passwords and keys    |
 |HTML5                      |Web Pages                       |
 |CSS3                       |Styling                         |
-|Bootstrap                  |Base styling theme              |
+|Bootstrap                  |Base styling theme and carousel display|
 
 
 ## Developed by
